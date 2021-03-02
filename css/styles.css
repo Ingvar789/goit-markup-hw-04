@@ -113,12 +113,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-info {
+  align-items: flex-end;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
   color: #757575;
 }
 
@@ -397,6 +397,7 @@ body {
 
 .icon-email-top,
 .icon-phone-top {
+  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -434,4 +435,15 @@ body {
 }
 .social-item:last-child {
   margin-right: 0;
+}
+
+.phone-icon {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.email-icon {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
 }
