@@ -400,17 +400,34 @@ body {
   fill: currentColor;
 }
 
-.social-links {
-  justify-content: space-between;
+.social-links-container {
+  padding: 0;
   margin: 16px 32px 30px 32px;
 }
 .social-links-item {
-  margin: 0 5px 0 5px;
+  color: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
-.social-links-item:first-child {
-  margin-left: 0;
+.social-links-item:hover {
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
-.social-links-item:last-child {
+.social-icon {
+  fill: currentColor;
+}
+.social-item {
+  margin: 0 5px 0 5px;
+  list-style: none;
+}
+.social-item:first-child {
+  margin-left: 0;
+}
+.social-item:last-child {
   margin-right: 0;
 }
