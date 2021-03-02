@@ -1,0 +1,406 @@
+/*Колір тексту і частин сторінки*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.grey-section {
+  max-width: 1600px;
+  margin: auto;
+  color: white;
+  background-color: #2f303a;
+}
+
+.blue-button {
+  color: white;
+  background-color: #2196f3;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+/*кнопки навігації*/
+
+.blue-button-hover {
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 6px 22px;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.blue-button-hover-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.blue-button-hover:hover {
+  background-color: #2196f3;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+/*головна навігація*/
+
+.nav-ref-hover {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.nav-ref-hover:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+/*логотип*/
+
+.logo-web {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: #2196f3;
+}
+.logo-studio-black {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: black;
+}
+.logo-studio-white {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: white;
+}
+.logo {
+  text-decoration: none;
+}
+
+/*контакти*/
+.contact-info-footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+/*переваги*/
+.benefits-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.benefits {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*чим займаємося і наша команда*/
+
+.our-work-title,
+.our-team-title {
+  margin: 0 0 50px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.our-team-title {
+  padding-top: 94px;
+}
+
+/*члени команди*/
+.team-names {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-posts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*проекти в порфоліо*/
+.projects-names {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.projects-branch {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*головна кнопка*/
+.main-button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+/*Геометрія елементів і флексбокс*/
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+.header-section {
+  align-items: center;
+  padding: 25px 0;
+}
+.top-line {
+  max-width: none;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav,
+.contacts,
+.benefits-container,
+.our-work-container,
+.our-team-container,
+.footer-container,
+.portfolio-container,
+.porfolio-navigation-container {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-item,
+.contact-info {
+  padding: 0 25px;
+}
+
+.grey-section-top {
+  height: 600px;
+  padding: 200px 0;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Img-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+}
+.main-button {
+  margin: auto;
+  margin-top: 30px;
+  max-width: 696px;
+}
+
+.benefits-item {
+  max-width: 270px;
+  margin: 0 15px 0 15px;
+}
+.benefits-item:first-child {
+  margin-left: 0;
+}
+.benefits-item:last-child {
+  margin-right: 0;
+}
+
+.our-work-section,
+.our-team-section {
+  padding: 0;
+  flex-direction: column;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.our-team-section {
+  padding-bottom: 94px;
+}
+.our-team-background {
+  max-width: 1600px;
+  margin: auto;
+  background: #f5f4fa;
+}
+
+.our-work-container img {
+  max-width: 370px;
+  width: 100%;
+}
+
+.our-team-container img {
+  max-width: 270px;
+  width: 100%;
+}
+.footer-section {
+  padding: 60px 0;
+  flex-direction: column;
+}
+.footer-container {
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.portfolio-container img {
+  max-width: 370px;
+  width: 100%;
+}
+.portfolio-container {
+  flex-wrap: wrap;
+}
+
+.portfolio-navigation {
+  padding-top: 0;
+  padding-bottom: 13px;
+  box-sizing: content-box;
+  max-width: 611px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.portfolio-item {
+  box-sizing: border-box;
+  max-width: 370px;
+  margin: 15px;
+}
+.portfolio-item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.portfolio-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.portfolio-item-description {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  margin: 0;
+  padding: 20px 24px;
+  margin-top: -5px;
+}
+
+.portfolio-image {
+  margin: 0;
+}
+
+.our-team-item {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main {
+  margin-top: 94px 0;
+}
+
+.benefits-section {
+  margin-top: 94px;
+  padding: 0;
+}
+
+.portfolio-section {
+  padding-bottom: 89px;
+}
+.portfolio-main {
+  margin-top: 94px;
+}
+
+/*картинки та іконки*/
+
+.portfolio-item:hover {
+  cursor: pointer;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.icon-email-top,
+.icon-phone-top {
+  color: #212121;
+  fill: currentColor;
+}
+
+.social-links {
+  fill: currentColor;
+}
