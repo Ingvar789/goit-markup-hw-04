@@ -123,7 +123,8 @@ body {
 }
 
 /*переваги*/
-.benefits-title {
+.benefits-title,
+.social-footer-text {
   margin-top: 30px;
   margin-bottom: 10px;
   font-style: normal;
@@ -147,7 +148,8 @@ body {
 /*чим займаємося і наша команда*/
 
 .our-work-title,
-.our-team-title {
+.our-team-title,
+.regular-customers-title {
   margin: 0 0 50px 0;
   font-style: normal;
   font-weight: bold;
@@ -227,7 +229,8 @@ body {
   padding: 25px 0;
 }
 .top-line {
-  max-width: none;
+  max-width: 1600px;
+  margin: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -238,7 +241,8 @@ body {
 .our-team-container,
 .footer-container,
 .portfolio-container,
-.porfolio-navigation-container {
+.porfolio-navigation-container,
+.regular-customers-container {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -246,10 +250,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.contacts {
+  align-items: center;
+}
 .main-nav-item,
 .contact-info {
-  padding: 0 25px;
+  padding: 32px 25px;
 }
 
 .grey-section-top {
@@ -289,7 +295,8 @@ body {
 }
 
 .our-work-section,
-.our-team-section {
+.our-team-section,
+.regular-customers-section {
   padding: 0;
   flex-direction: column;
   margin-top: 94px;
@@ -314,8 +321,10 @@ body {
   width: 100%;
 }
 .footer-section {
+  align-items: center;
   padding: 60px 0;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .footer-container {
   padding-top: 20px;
@@ -386,6 +395,9 @@ body {
 .portfolio-main {
   margin-top: 94px;
 }
+. {
+  padding: 32px 0 32px 0;
+}
 
 /*картинки та іконки*/
 
@@ -394,11 +406,43 @@ body {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
-.icon-email-top,
-.icon-phone-top {
-  margin-right: 10px;
+.regular-customers {
+  color: #afb1b8;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.regular-customers:hover {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+.regular-customers-icon {
   fill: currentColor;
+}
+
+.social-footer {
+  display: block;
+  box-sizing: border-box;
+  height: 80px;
+  justify-content: flex-start;
+  margin-left: 70px;
+}
+.social-footer-text {
+  margin: 0;
+  padding-bottom: 20px;
+  color: white;
+}
+.social-links-item-footer {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-links-item-footer:hover {
+  background-color: #2196f3;
 }
 
 .social-links-container {
@@ -409,7 +453,16 @@ body {
   padding: 0;
   margin: 16px 32px 30px 32px;
 }
-.social-links-item {
+.social-links-container-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.social-links-item,
+.social-links-item-footer {
   color: #afb1b8;
   display: flex;
   justify-content: center;
@@ -422,7 +475,6 @@ body {
   background-color: #2196f3;
   color: #ffffff;
 }
-
 .social-icon {
   fill: currentColor;
 }
@@ -437,13 +489,23 @@ body {
   margin-right: 0;
 }
 
-.phone-icon {
+.icon-email-top,
+.icon-phone-top {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.email-top,
+.phone-top {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
   align-items: center;
 }
-.email-icon {
+
+.icons-top {
   display: flex;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  align-items: flex-end;
+  box-sizing: border-box;
+  align-items: center;
 }
