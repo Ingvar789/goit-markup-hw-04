@@ -438,13 +438,6 @@ body {
   padding-bottom: 20px;
   color: white;
 }
-.social-links-item-footer {
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.social-links-item-footer:hover {
-  background-color: #2196f3;
-}
 
 .social-links-container {
   display: flex;
@@ -464,7 +457,6 @@ body {
 }
 .social-links-item,
 .social-links-item-footer {
-  color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -472,10 +464,21 @@ body {
   width: 44px;
   height: 44px;
 }
+.social-links-item {
+  color: #afb1b8;
+}
+.social-links-item-footer {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
 .social-links-item:hover {
   background-color: #2196f3;
   color: #ffffff;
 }
+.social-links-item-footer:hover {
+  background-color: #2196f3;
+}
+
 .social-icon {
   fill: currentColor;
 }
